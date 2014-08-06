@@ -83,23 +83,27 @@ form {
 	color: #666666;
 }
 
-.lipositionone {
+.shoppinglistitems {
+
+}
+
+.shoppinglistitem {
 	color: white;
+}
+
+.positionone {
 	background-color: #29ABE2;
 }
 
-.lipositiontwo {
-	color: white;
+.positiontwo {
 	background-color: #3EB3E5;
 }
 
-.lipositionthree {
-	color: white;
+.positionthree {
 	background-color: #54BCE8;
 }
 
-.lipositionfour {
-	color: white;
+.positionfour {
 	background-color: #69C4EB;
 }
 
@@ -117,4 +121,12 @@ form {
 	top: 50%;
 	margin-top: -8px;
 	right: 24px;
+}
+
+.deletebutton {
+
+}
+
+.deletebuttonred {
+	display: none;
 }
