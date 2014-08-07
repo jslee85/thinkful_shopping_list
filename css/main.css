@@ -87,6 +87,10 @@ form {
 
 }
 
+.yourcompletedlist {
+
+}
+
 .shoppinglistitem {
 	position: relative;
 	color: white;
@@ -95,20 +99,24 @@ form {
 	margin: 1px 0px;
 }
 
-.positionone {
+.shoppinglistitem:nth-child(1) {
 	background-color: #29ABE2;
 }
 
-.positiontwo {
+.shoppinglistitem:nth-child(2) {
 	background-color: #3EB3E5;
 }
 
-.positionthree {
+.shoppinglistitem:nth-child(3) {
 	background-color: #54BCE8;
 }
 
-.positionfour {
+.shoppinglistitem:nth-child(4) {
 	background-color: #69C4EB;
+}
+
+.shoppinglistitem:nth-child(5) {
+	background-color: #78caed;
 }
 
 .licompleteditem {
@@ -119,18 +127,26 @@ form {
 	margin: 1px 0px;
 }
 
-.licompleteditem img {
+i {
+	font-style: normal;
 	position: absolute;
+	height: 16px;
 	width: 16px;
 	top: 50%;
 	margin-top: -8px;
 	right: 24px;
+	cursor: pointer;
 }
 
 .deletebutton {
-
+	display: none;
 }
 
-.deletebuttonred {
-	display: none;
+.licompleteditem .deletebutton {
+	background-image: url(../images/delete.png);
+	display: inline-block;
+}
+
+.deletebutton:hover {
+	background-image: url(../images/deletered.png);
 }
