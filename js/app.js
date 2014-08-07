@@ -1,28 +1,19 @@
 $(document).ready(function() {
-
-	/*$('input').keyup(function() {
-    	var newitem = $(this).val();
-    	$('span').text(newitem);
- 	})
- 	
- 	.keyup();
-
-	$('.input').keypress(function (e) {
+	/*From stack exchange. Input value with enter key...I think?*/
+	$('#addtext').keypress(function (e) {
 		if (e.which == 13) {
-    		$('form#login').submit();
+    		var newitem = $(this).val();
+    		$('.yourshoppinglist').prepend('<li class="shoppinglistitem">'+newitem+'</li>');
     		return false;    //<---- Add this line
   		}
 	});
-
- 	$('.newitem').on('click', function() {
-
- 	});*/
 
 	/*Toggle between complete and incomplete*/
 	$('.shoppinglistitem').on('click', function() {
 		$(this).toggleClass('licompleteditem');
 	});
 
+	/*First attempt--did not work!*/
 	/*$('.yourshoppinglist li').click(function() {
 		$('.yourshoppinglist li').removeClass('shoppinglistitem').addClass('licompleteditem');
 		$(this).toggleClass('shoppinglistitem licompleteditem')
