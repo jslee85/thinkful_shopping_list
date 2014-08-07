@@ -83,12 +83,16 @@ form {
 	color: #666666;
 }
 
-.shoppinglistitems {
+.yourshoppinglist {
 
 }
 
 .shoppinglistitem {
+	position: relative;
 	color: white;
+	background-color: #29ABE2;
+	text-decoration: none;
+	margin: 1px 0px;
 }
 
 .positionone {

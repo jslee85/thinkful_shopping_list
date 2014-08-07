@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
-
-	$('input').keyup(function() {
+	/*$('input').keyup(function() {
     	var newitem = $(this).val();
     	$('span').text(newitem);
  	})
@@ -17,23 +16,31 @@ $(document).ready(function() {
 
  	$('.newitem').on('click', function() {
 
- 	});
+ 	});*/
 
-	$('.licompleteditem').mouseenter(function() {
-		$('.deletebutton').hide();
+	/*Toggle between complete and incomplete*/
+	$('.shoppinglistitem').on('click', function() {
+		$(this).toggleClass('licompleteditem');
+	});
+
+	/*$('.yourshoppinglist li').click(function() {
+		$('.yourshoppinglist li').removeClass('shoppinglistitem').addClass('licompleteditem');
+		$(this).toggleClass('shoppinglistitem licompleteditem')
+	});*/
+
+	/*Hover state for delete button*/
+	$('.deletebutton').mouseenter(function() {
+		$(this).hide();
 		$('.deletebuttonred').show();
-	})
+	});
 	
-	.mouseleave(function() {
-		$('.deletebuttonred').hide();
+	$('.deletebuttonred').mouseleave(function() {
+		$(this).hide();
 		$('.deletebutton').show();
 	});
 
+	/*Allows user to delete items*/
 	$('.deletebuttonred').on('click', function() {
 		$(this).closest('.licompleteditem').remove();
 	});
 });
-
-
-
-    getItem();
