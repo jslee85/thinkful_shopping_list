@@ -1,17 +1,16 @@
 $(document).ready(function() {
-	/*From stack exchange. Input value with enter key...I think?
 	$('#addtext').keypress(function (e) {
-		if (e.keyCode === 13) {
+		if (e.which === 13) {
 			var newitem = '<li class="shoppinglistitem"><span>';
-			var newitem += '"$(this).val();"';
-			var newitem += '</span>';
-			var newitem += '<i class="deletebutton"></i>';
-			var newitem += '</li>';
+			newitem += $(this).val();
+			newitem += '</span>';
+			newitem += '<i class="deletebutton"></i>';
+			newitem += '</li>';
 			$('.yourshoppinglist').prepend(newitem);
 			$('#addtext').val('');
 			return false;
 		}
-	});*/
+	});
 
 	/*Toggle between complete and incomplete*/
 	$('.yourshoppinglist').on('click', '.shoppinglistitem', function() {
